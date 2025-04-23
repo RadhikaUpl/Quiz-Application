@@ -1,0 +1,188 @@
+/* 🔹 Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("quizBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* 🔹 Quiz Container */
+.quizQue {
+    height: 600px;
+    width: 65%;
+    border-radius: 20px;
+    margin-top: 1rem;
+    background: rgba(10, 10, 30, 0.95); /* Semi-transparent dark theme */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+/* 🔹 Question Box */
+.questionBox {
+    height: 400px;
+    width:90%;
+    border-radius: 20px;
+    background: rgba(20, 20, 50, 0.9);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: auto;
+}
+
+/* 🔹 Question */
+.que {
+    height: 40px;
+    width:100%;
+    background: linear-gradient(135deg, #ffcc00, #ff8800);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* 🔹 Options Box */
+.options {
+    height:220px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: auto;
+}
+
+/* 🔹 Option Styling */
+.opt {
+    height: 50px;
+    width: 460px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #232f4d, #2a5298);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: auto;
+}
+.opt:hover {
+    background: linear-gradient(135deg, #2a5298, #232f4d);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.optClick{
+    background: linear-gradient(135deg, #ffcc00, #ff8800);
+    height: 50px;
+    width: 460px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: auto;
+}
+
+/* 🔹 Next Button */
+.nextbutton {
+
+    margin-left:20rem;
+    margin-top: 1rem;
+}
+
+.nextbutton button {
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ffcc00, #ff8800);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    box-shadow: 3px 3px 10px rgba(255, 204, 0, 0.6);
+}
+.nextbutton button:hover {
+    background: linear-gradient(135deg, #ff8800, #ffcc00);
+    transform: scale(1.05);
+}
+.btn{
+   all:unset;
+}
+.disabled
+{
+    pointer-events: none;
+    opacity:0.5;
+}
+.selected
+{
+    background: linear-gradient(135deg, #ff8800, #ffcc00);
+}
+.prebutton {
+  
+    margin-top: 1rem;
+    margin-left:1.5rem;
+}
+
+.prebutton button {
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ffcc00, #ff8800);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    box-shadow: 3px 3px 10px rgba(255, 204, 0, 0.6);
+}
+.prebutton button:hover {
+    background: linear-gradient(135deg, #ff8800, #ffcc00);
+    transform: scale(1.05);
+}
+.buttons{
+    display:flex;
+}
+
+.quiz-details{
+    margin-bottom: 1rem;
+    
+}
+
+.quiz-type{
+    font-size:x-large;
+    font-weight: 600;
+}
+
+.que-counter{
+    font-size: larger;
+}
+.queno{
+    margin-left:11px;
+}
