@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">
+         <div class="heading">
+        <h1 >QUIZZARD</h1>
+    </div>
+    <div class="button">
+        <button><a href="#QuizPackages">Start Quiz</a></button>
+    </div>
+</header>
+ <main>
+    <div class="secondHeading" >
+        WELCOME TO QUIZZARD
+    </div>
+</main>  
+    <section id="QuizPackages" >
+       <div class="mainContent">
+        <div class="navBar">
+            <div class="div">
+                <i class="fa-solid fa-house"></i>
+                <a href="#header">HOME</a>
+            </div>
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <a href="#quizSec">QUIZ</a>
+          </div>
+            <div>
+                <i class="fa-solid fa-medal"></i>
+                <a href="#takequizID">TOP PERFORMERS</a>
+            </div>
+          
+            <div>
+                <i class="fa-solid fa-note-sticky"></i>
+                <a href="#notes-heading">NOTES</a>
+            </div>
+           
+            <div> 
+                <i class="fa-solid fa-user"></i><a id="login" class="loginUserNav">LOGIN</a>
+                <a id="ProfileNav"></a></div>
+           
+            <a ><i class="fa-solid fa-right-from-bracket logoutBtn"></i></a>
+    
+    </div>
+        <br>
+        <br>
+        <form id="loginInForm">
+        <div id="loginModal" class="modal displayModel">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to Continue</h2>
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="password" placeholder="Enter Password">
+            <div class="loginBtn">
+                <button id="loginBtn">Login</button>
+                <p class="signin">Don't have account ? <A id="signIn">SignIn.</A></p>
+            </div>    
+            </div>
+    </div>
+</form>
+    <form id="signUpForm">
+    <div id="signinModal" class="signinClass displayModel">
+        <div class="signin-content">
+        <span class="closeSignin">&times;</span>
+        <h2>Create Account</h2>
+        <input type="text" id="emailId" placeholder="Enter Email">
+        <input type="text" id="Newusername" placeholder="Enter Username">
+        <input type="password" id="Newpassword" placeholder="Enter Password">
+        <input type="file" id="photo" placeholder="Upload Photo">
+        <div class="SigninBtn">
+         
+            <button id="SignInButton" type="submit">Signin</button>
+  
+            <p class="signinBelow">Already have account ? <A id="signInBelow">Login.</A></p>
+        </div>    
+        </div>
+</div>
+</form>
+<!-- Profile popup model -->
+
+
+<div id="profileModal" class="profileDisplay displayProfile">
+    <div class="modal-content">
+        <span class="closeProfile">&times;</span>
+        <h2>User Profile</h2>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <p id="name"></p>
+        <p id="email"></p>
+        
+    </div>
+</div>
+        <div class="quiz">
+            Coding Quiz
+        </div>
+        <div class="des"id="quizSec">
+            <p>Quizzard is an interactive web application that allows users to take quizzes on Java, HTML-CSS,JavaScript and C++ while also providing a built-in notes feature for effective learning. It offers instant feedback, progress tracking, and a user-friendly interface to enhance programming skills. Perfect for students and developers, it helps reinforce concepts and stay ahead in coding!</p>
+        </div>
+        <div class="quizSec" >
+            <div class="quizContainer">
+                <div class="img javaimg">
+
+                </div>
+            <div class="quiztitle">JAVA</div>
+            <div class="quizDes">
+                Test your Java knowledge with this quiz! Challenge yourself with questions on core concepts, syntax, and best practices.
+            </div>
+            <div class="quizPrice">
+                    Rs.200
+            </div>
+            <a data-section="java"class="take-quiz">Take Quiz</a>
+        </div>
+            <div class="quizContainer" id="quizContainer">
+                <div class="img htmlCssImg ">
+
+                </div>
+                <div class="quiztitle">HTML-CSS</div>
+                <div class="quizDes">
+                    Test your HTML & CSS skills with this quiz! Covering tags, styling, layouts, and responsive design.
+                </div>
+                <div class="quizPrice htmlPrice">
+                    Rs.300
+                </div>
+                <a data-section="html-css"class="take-quiz">Take Quiz</a>
+            </div>
+            <div class="quizContainer">
+                <div class="img jsimg">
+
+                </div>
+                 <div class="quiztitle">JAVASCRIPT</div>
+                 <div class="quizDes">
+                    Test your JavaScript skills with this quiz! Covering core concepts, functions, and modern ES6+ features.
+                 </div>
+                 <div class="quizPrice">
+                    Rs.250
+                 </div>
+                 <a data-section="javascript" class="take-quiz">Take Quiz</a>
+            </div>
+            <div class="quizContainer">
+                <div class="img cppImg">
+
+                </div>
+                <div class="quiztitle" >C++</div>
+                <div class="quizDes">
+                    Test your C++ knowledge with this quiz! Explore core concepts, OOP, STL, and advanced programming techniques.
+                </div>
+                <div class="quizPrice" >
+                    Rs.399
+                </div>
+                <a data-section="cpp" class="take-quiz"  id="takequizID">Take Quiz</a>
+            </div>
+        </div >
+       
+    <div class="top-performers headingPerf">
+        <h1 id="perf-heading">TOP PERFORMERS</h1>
+        <div class="top-perf-container">
+
+            <div class="perf-div"> 
+                <table>
+                    <tr id="table-content">
+                        <th id="name">Name</th>
+                        <th id="quiz-type">Quiz</th>
+                        <th id="score">Score</th>
+                        
+                    </tr>
+
+                   
+                </table>
+        </div> 
+    </div>
+   </div>
+    <div class="notes-heading" id="notes-heading">  <h1 id="perf-heading" >NOTES</h1></div>
+
+    <div class="notes-container">
+       
+        <A class="subject">JAVA</A>
+        <a class="subject">JAVASCRIPT</a>
+        <a class="subject">C++</a>
+        <A class="subject">HTML-CSS</A>
+    </div>
+     
+<footer>
+    <p>© 2025 QUIZZARD. All rights reserved</p>
+    <div class="links">
+      <div class="linkedIn link"><a href="https://www.linkedin.com/in/radhika-uplanchiwar-802059312/">LINKEDIN</a></div>
+      <div class="Github link" ><A href="https://github.com/RadhikaUpl">GITHUB</A></div>
+    </div>  
+    <div class="secondfoot">
+        <div class="contactUS divTerm ">
+            <p>📩 Contact Us</p>
+           <p>📧 Email: support@yourquizapp.com</p> 
+            <p>🌐 Website: www.yourquizapp.com</p>
+           <p>📞 Phone: +1 (123) 456-7890</p> 
+            <p></p>📍 Address: 123 Quiz Street, Knowledge City, QC 45678</p> 
+            
+            <p>💬 Follow us on:🔗 Instagram | LinkedIn</p>
+            
+            
+            
+        </div>
+        <div class="AboutUS divTerm ">
+            <p>About Us 🎯</p>
+            <p> Welcome to YourQuizApp, the ultimate platform for testing your knowledge and challenging your friends! 🚀</p>
+            <p>💡 Why Choose Us?</p>
+<p>✔ Wide range of quiz categories 📚</p>
+<p>✔ Real-time leaderboards 🏆</p>
+<p>✔ User-friendly interface 🎨</p>
+<p>✔ Regularly updated questions 🔄</p>
+
+<p>Join us and start your knowledge journey today!</p>
+        </div>
+        <div class="privacypolicy divTerm">
+            <p>Privacy Policy 🔒</p>
+           <p>We value your privacy! YourQuizApp collects minimal data to enhance your experience. We never sell your information and use secure measures to protect it. By using our platform, you agree to our data practices.</p> 
+        </div>
+        <div class="terms divTerm">
+           <p>Terms & Conditions 📜</p> 
+
+<p>By using YourQuizApp, you agree to the following:</p>
+
+<p>You must be at least 13 years old to use our platform.</p>
+<p>Do not share or distribute quiz content without permission.</p>
+<p>Quizzard is not responsible for incorrect quiz answers.</p>
+<p>Users must not engage in cheating or fraudulent activities.</p>
+<p>We may update these terms at any time without prior notice.</p>
+        </div>
+
+    </div>
+</footer>
+
+
+</div>
+    </section>
+
+   
+</body>
+
+
+<script src="script.js"></script>
+<script src="quiz.js"></script>
+
+</html>
